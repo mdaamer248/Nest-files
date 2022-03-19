@@ -1,0 +1,50 @@
+### Signup new user
+POST http://localhost:3000/users/signup
+content-type:application/json
+
+{
+    "email" : "md807@mail.com",
+    "password" : "123"
+}
+
+
+
+
+### SignIn user
+Post http://localhost:3000/users/signIn
+content-type:application/json
+
+{
+   "email" : "md01@mail.com",
+    "password" : "123" 
+
+}
+
+### SignOut user
+Post http://localhost:3000/users/signOut
+
+
+
+### WhoAmI
+Get http://localhost:3000/users/whoAmI
+
+
+### Get User by Id
+
+Get http://localhost:3000/users/8
+
+
+### Update the User
+
+PATCH http://localhost:3000/users/update/1
+content-type:application/json
+
+{
+    "email" : "md01@mail.com",
+    "password" : "1234"
+}
+
+
+### Delete the user by Id
+
+DELETE  http://localhost:3000/users/6
